@@ -23,7 +23,7 @@ function closeModalFunction(){
 
 //close modal using escape key
 document.addEventListener('keydown', keydownFunction);
-
+overlay.addEventListener('click', closeModalFunction);
 function keydownFunction(e){
     if(e.key === 'Escape'){
         if(!modal.classList.contains('hidden')){
